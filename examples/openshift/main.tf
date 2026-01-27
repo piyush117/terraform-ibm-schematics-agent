@@ -98,7 +98,7 @@ module "ocp_base" {
 ##############################################################################
 
 module "schematics_agent" {
-  source                      = "../.."
+  source                      = "terraform-ibm-modules/schematics-agent/ibm"
   infra_type                  = "ibm_openshift"
   cluster_id                  = module.ocp_base.cluster_id
   cluster_resource_group_name = module.resource_group.resource_group_name
